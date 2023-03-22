@@ -1,4 +1,4 @@
-﻿using System.Runtime.CompilerServices;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -12,7 +12,7 @@ class Set
         elements = new List<int>();
 
     }
-
+    
     public void Add(int element)
     {
         if (!elements.Contains(element))
@@ -117,7 +117,7 @@ class Set
         }
         return result;
     }
-    public IEnumerable<int> Elements
+    public List<int> Elements
     {
         get { return elements; }
     }
